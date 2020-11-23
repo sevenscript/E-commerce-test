@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg  bg-dark  sticky-top py-1 ">
+    <div class="header-top">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top py-1 navigation">
+        <form class="form-inline my-2 my-lg-0">
+          <a class="form-control mr-sm-4 img-logo-back" href="inicio.html"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Opciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products.html">Productos</a>
+                <a class="dropdown-item" href="categories.html">Categorías</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Hola <span class="user-nav-span"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="my-profile.html">Perfil</a>
+                <a class="dropdown-item" href="sell.html">Vender</a>
+                <a class="dropdown-item" href="cart.html">Mi carrito <i class="fal fa-shopping-cart"></i></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" id="logOut" href="index.html">Cerrar sesión</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search"
+              id="searchInput">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="search" id="search">
+    <table class="search-table" id="searchTable">
+      <thead>
+        <tr>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="tbodyProducts">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-img col-lg-4">
+                <img src="img/prod1.jpg" alt="Chevrolet" />
+                <span class="badge badge-warning">Nuevo</span>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <h3>Chevrolet Onix Joy Generación 2019, variedad de colores. Motor 1.0, ideal para ciudad.</h3>
+                  </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <main role="main">
+    <section class="jumbotron container-fluid jumbotron-fluid   text-center">
+      <div class="m-5">
+        <h1></h1>
+      </div>
+    </section>
+    <div class="album py-5 color-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat1.jpg">
+              <h3 class="m-3">Autos (122)</h3>
+              <div class="card-body">
+                <p class="card-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat2.jpg">
+              <h3 class="m-3">Juguetes (354)</h3>
+              <div class="card-body">
+                <p class="card-text">Encuentra aquí los mejores precios para niños/as de cualquier edad.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat3.jpg">
+              <h3 class="m-3">Muebles (157)</h3>
+              <div class="card-body">
+                <p class="card-text">Muebles antiguos, nuevos y para ser armados por uno mismo.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat4.jpg">
+              <h3 class="m-3">Herramientas (452)</h3>
+              <div class="card-body">
+                <p class="card-text">Herramientas para cualquier tipo de trabajo.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat5.jpg">
+              <h3 class="m-3">Computadoras (724)</h3>
+              <div class="card-body">
+                <p class="card-text">Todo en cuanto a computadoras, para uso de oficina y/o juegos.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="categories.html" class="card mb-4 shadow-lg card-style custom-card">
+              <img class="bd-placeholder-img image-card-style card-img-top" src="img/cat6.jpg">
+              <h3 class="m-3">Vestimenta (841)</h3>
+              <div class="card-body">
+                <p class="card-text">Gran variedad de ropa, nueva y de segunda mano.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <a type="button" class="btn btn-style btn-lg  mt-4 btn-block" href="categories.html">Ver todas</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="color-grey">
+    <div class="container">
+      <p class="float-right">
+        <a href="#" class="a-style">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" class="a-style" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/search.js"></script>
+</body>
+
+</html>

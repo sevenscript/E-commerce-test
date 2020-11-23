@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg  bg-dark  sticky-top py-1 ">
+    <div class="header-top">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top py-1 navigation">
+        <form class="form-inline my-2 my-lg-0">
+          <a class="form-control mr-sm-4 img-logo-back" href="inicio.html"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Opciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products.html">Productos</a>
+                <a class="dropdown-item" href="categories.html">Categorías</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Hola <span class="user-nav-span"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="my-profile.html">Perfil</a>
+                <a class="dropdown-item" href="sell.html">Vender</a>
+                <a class="dropdown-item" href="cart.html">Mi carrito <i class="fal fa-shopping-cart"></i></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search"
+              id="searchInput">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="color-light">
+    <div class="text-center p-4 py-5 bg-product-info">
+      <h2>Descripción del producto</h2>
+      <p class="lead">Encontrarás aquí toda la información del producto seleccionado.</p>
+    </div>
+    <div class="container mt-5">
+
+      <h3 id="productName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Descripción</dt>
+        <dd>
+          <p id="productDescription"></p>
+        </dd>
+
+        <dt>Precio</dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+
+        <dt>Cantidad de vendidos</dt>
+        <dd>
+          <p id="productSold"></p>
+        </dd>
+
+        <dt>Categoría</dt>
+        <dd>
+          <p id="productCategory"></p>
+        </dd>
+
+        <dt>Imágenes ilustrativas</dt>
+
+
+        <dd>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators" id="productImagesGalleryLi">
+
+            </ol>
+            <div class="carousel-inner" id="productImagesGallery">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </dd>
+      </dl>   
+    </div>
+    
+    <div class="container color-white" id="commentVoid"></div>
+  
+    <div class=" color-white mt-5 pt-5 pb-5 pt-4">
+      <div class="container" id="commentarys"></div>
+      <div class=" color-white mt-5">
+        <div class="container" id="commentDisplay">
+          <div class="input-group">
+            <input type="text" id="commentText" class="form-control btn-lg" placeholder="Deje un comentario..."
+              aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append shadow-lg">
+              <button type="button" id="doComment" class="btn btn-lg btn-style">Comentar</button>
+              <select type="button" id="star-select" name="stars"
+                class="btn btn-dark dropdown-toggle dropdown-toggle-split">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="color-light p-4">
+      <div class="container ">
+        <h4 class="mb-5 mt-4">Productos relacionados</h4>
+        <div>
+          <div class="row" id="productRelated">
+
+          </div>
+        </div>
+        <div class="row">
+          <a type="button" class="btn btn-style btn-lg mt-4 mb-4 btn-block" href="products.html">Ver productos</a>
+        </div>
+      </div>
+      
+    </div>
+
+  </main>
+
+
+  <footer class="color-grey">
+    <div class="container">
+      <p class="float-right">
+        <a href="#" class="a-style">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" class="a-style" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.
+      </p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+</body>
+
+</html>

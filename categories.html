@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg  bg-dark  sticky-top py-1 ">
+    <div class="header-top">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  sticky-top py-1 navigation">
+        <form class="form-inline my-2 my-lg-0">
+          <a class="form-control mr-sm-4 img-logo-back" href="inicio.html"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Opciones
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products.html">Productos</a>
+                <a class="dropdown-item" href="categories.html">Categorías</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Hola <span class="user-nav-span"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="my-profile.html">Perfil</a>
+                <a class="dropdown-item" href="sell.html">Vender</a>
+                <a class="dropdown-item" href="cart.html">Mi carrito <i class="fal fa-shopping-cart"></i></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search"
+              id="searchInput">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="pb-5 color-light">
+    <div class="text-center p-4 py-5 bg-categories">
+      <h2>Categorías</h2>
+      <p class="lead">Verás aquí todas las categorías del sitio.</p>
+    </div>
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-md-6 text-left">
+          <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+            <label class="btn btn-style active" id="sortAsc">
+              <input type="radio" name="options" autocomplete="off" checked>A-Z
+            </label>
+            <label class="btn btn-style" id="sortDesc">
+              <input type="radio" name="options" autocomplete="off">Z-A
+            </label>
+            <label class="btn btn-style" id="sortByCount">
+              <input type="radio" name="options" autocomplete="off"><i class="fas fa-sort-amount-down mr-1"></i>Cant.
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-md-6"></div>
+        <div class="col-md-6 col-sm-12 mb-1 container">
+          <div class="row container">
+            <div class="col-md-3">
+              <p class="font-weight-normal text-left mb-2">Cant.</p>
+            </div>
+            <div class="col-md-3">
+              <input class="form-control mt-2 mb-2" type="number" placeholder="min." id="rangeFilterCountMin">
+            </div>
+            <div class="col-md-3">
+              <input class="form-control mt-2 mb-2" type="number" placeholder="máx." id="rangeFilterCountMax">
+            </div>
+            <div class="col-md-3 mt-3 p-0">
+              <div class="btn-group float-left" role="group">
+                <button class="btn btn-style btn-block" id="rangeFilterCount">Filtrar</button>
+                <button class="btn btn-primary btn-sm" id="clearRangeFilter">Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="list-group" id="cat-list-container">
+        </div>
+      </div>
+    </div>  
+  </main>
+  <footer class="color-grey">
+    <div class="container">
+      <p class="float-right">
+        <a href="#" class="a-style">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" class="a-style" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.
+      </p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/categories.js"></script>
+</body>
+
+</html>
