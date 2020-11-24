@@ -3,6 +3,7 @@
 $("#btnLogin").click(function () {
   console.log("usuariodeprueba@user.com");
   console.log("pass: 12345678");
+  
 
   $("#mensaje").text("");
  
@@ -24,6 +25,7 @@ function validarUsuario() {
   };
   if (user != "usuariodeprueba@user.com" && user != "" || password != 12345678 && password != "") {
     $("#mensaje").html("El usuario y/o la contraseña  <br>son incorrectos");
+    alert("user: usuariodeprueba@user.com | pass: 12345678");
   }
   if (user == "" || password == "") {
     $("#mensaje").html("Los campos no pueden <br>quedar vacios");
